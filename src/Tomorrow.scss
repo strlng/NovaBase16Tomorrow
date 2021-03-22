@@ -1,0 +1,434 @@
+meta {
+  -theme-display-name: "Base16 - Tomorrow";
+  -theme-interface-style: light;
+  -theme-accent-color: true;
+}
+
+// Colors
+$base00: #ffffff;  //base00
+$base01: #e0e0e0;  //base01
+$base02: #d6d6d6;  //base02
+$base03: #8e908c;  //base03
+$base04: #969896;  //base04
+$base05: #4d4d4c;  //base05
+$base06: #282a2e;  //base06
+$base07: #1d1f21;  //base07
+$red: #c82829;     //base08
+$orange: #f5871f;  //base09
+$yellow: #eab700;  //base0A
+$green: #718c00;   //base0B
+$cyan: #3e999f;    //base0C
+$blue: #4271ae;    //base0D
+$magenta: #8959a8; //base0E
+$brown: #a3685a;   //base0F
+
+/*
+ * Window styles
+ */
+
+meta.window {
+  border-color: $base01;
+  background-color: $base01;
+}
+
+meta.titlebar {
+  color: $base04;
+  border-color: $base02;
+  background-color: $base00;
+}
+meta.titlebar.inactive {
+  background-color: $base01;
+}
+
+meta.button {
+  background: $base02;
+  border: $base03;
+  color: $base04;
+}
+
+meta.button.highlighted {
+  background: $base03;
+  border: $base04;
+  color: $base06;
+}
+
+meta.button.selected {
+  background: $base01;
+  border: $base02;
+  color: $base06;
+}
+
+meta.button.highlighted.selected {
+  background: $base01;
+  border: $base02;
+  color: $base04;
+}
+
+meta.button.disabled {
+}
+
+meta.textfield {
+  background-color: $base00;
+  border-color: $base02;
+  color: $base05;
+}
+meta.textfield.highlighted {
+  background-color: $base00;
+  border-color: $base01;
+  color: $base05;
+}
+
+meta.document {
+  border-color: $base01;
+  background-color: $base00;
+}
+
+/* Text */
+meta.text {
+  color: $base05;
+}
+meta.text.invisible {
+  color: $base03;
+}
+meta.text.selected {
+  background-color: $base02;
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: $base02;
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: $base03;
+}
+
+/* Gutter */
+meta.gutter {
+  color: $base03;
+}
+meta.gutter.selected {
+  background-color: $base02;
+  color: $base04;
+}
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+  color: $magenta;
+}
+comment {
+  color: $base03;
+}
+processing {
+  color: $magenta;
+}
+declaration {
+  color: $magenta;
+}
+bracket {
+  color: $base05;
+}
+operator {
+  color: $base05;
+}
+invalid {
+  background-color: $red;
+  color: white;
+}
+link {
+  color: $blue;
+}
+
+/* Values */
+value.boolean {
+  color: $orange;
+}
+value.null {
+  color: $orange;
+}
+value.number {
+  color: $orange;
+}
+value.entity {
+  color: $orange;
+}
+value.symbol {
+  color: $orange;
+}
+
+/* Identifiers */
+identifier.type {
+  color: $yellow;
+}
+identifier.constant {
+  color: $cyan;
+}
+identifier.global {
+  color: $base05;
+}
+identifier.variable {
+  color: $red;
+}
+identifier.decorator,
+identifier.function,
+identifier.method {
+  color: $blue;
+}
+identifier.property {
+  color: $red;
+}
+identifier.key {
+  color: $base05;
+}
+identifier.argument {
+  color: $red;
+}
+
+/* Strings */
+string {
+  color: $green;
+}
+string.key {
+  color: $green;
+}
+string-template {
+  color: $base06;
+}
+string-template.value {
+  color: $green;
+}
+regex {
+  color: $cyan;
+}
+regex.escaped {
+  color: $cyan;
+}
+cdata {
+  color: $base05;
+}
+
+/* Markup */
+markup.heading {
+  color: $blue;
+}
+markup.line {
+  color: $blue;
+}
+markup.bold {
+  color: $yellow;
+  font-weight: bold;
+}
+markup.italic {
+  color: $magenta;
+  font-style: italic;
+}
+markup.strikethrough {
+  color: $green;
+}
+markup.list.item {
+  color: $red;
+}
+markup.code {
+  color: $base04;
+}
+markup.link {
+  color: $blue;
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  color: $magenta;
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: $magenta;
+}
+
+/* Tags */
+tag {
+  color: $base05;
+}
+tag.name {
+  color: $red;
+}
+tag.framework {
+  color: $brown;
+}
+tag.attribute.name {
+  color: $orange;
+}
+tag.attribute.value {
+  color: $green;
+}
+tag.attribute.value.link {
+  color: $blue;
+}
+
+/* Styles */
+style.at {
+  color: $magenta;
+}
+style.selector.element {
+  color: $red;
+}
+style.selector.identifier.id {
+  color: $blue;
+}
+style.selector.identifier.class {
+  color: $orange;
+}
+style.selector.pseudoclass {
+  color: $orange;
+}
+style.selector.pseudoelement {
+  color: $orange;
+}
+style.attribute.name {
+  color: $base05;
+}
+style.value.number {
+  color: $orange;
+}
+style.value.color.hex {
+  color: $cyan;
+}
+style.value.keyword {
+  color: $magenta;
+}
+style.value.color.named {
+  color: $blue;
+}
+style.value.identifier.function {
+  color: $cyan;
+}
+
+/* Terminal */
+
+terminal.black,
+terminal.bright-black {
+  color: $base00;
+}
+
+terminal.red,
+terminal.bright-red {
+  color: $red;
+}
+
+terminal.green,
+terminal.bright-green {
+  color: $green;
+}
+
+terminal.yellow,
+terminal.bright-yellow {
+  color: $yellow;
+}
+
+terminal.blue,
+terminal.bright-blue {
+  color: $blue;
+}
+
+terminal.magenta,
+terminal.bright-magenta {
+  color: $magenta;
+}
+
+terminal.cyan,
+terminal.bright-cyan {
+  color: $cyan;
+}
+
+terminal.white,
+terminal.bright-white {
+  color: $base05;
+}
+
+/* advancedPHP */
+
+advphp.static.condition {
+  color: $magenta;
+}
+advphp.static.processor {
+  color: $magenta;
+}
+advphp.static.declaration {
+  color: $magenta;
+}
+advphp.static.import {
+  color: $magenta;
+}
+advphp.static.constant {
+  color: $cyan;
+}
+advphp.static.wordOperator {
+  color: $base05;
+}
+
+advphp.wp.keywords {
+  color: $cyan;
+}
+
+advphp.curl.keywords {
+  color: $cyan;
+}
+
+advphp.sql.keywords {
+  color: $magenta;
+}
+
+advphp.operator {
+  color: $base05;
+}
+advphp.bracket {
+  color: $base05;
+}
+advphp.delimiter {
+  color: $base05;
+}
+
+advphp.identifier.variable.prefix {
+  color: $base05;
+}
+advphp.identifier.variable.name {
+  color: $red;
+}
+advphp.identifier.variable.this {
+  color: $yellow;
+}
+
+advphp.identifier.function.keyword {
+  color: $magenta;
+}
+advphp.identifier.function.name {
+  color: $blue;
+}
+advphp.identifier.parameter.prefix {
+  color: $base05;
+}
+advphp.identifier.parameter.name {
+  color: $red;
+}
+
+advphp.identifier.object.name {
+  color: $yellow;
+}
+
+advphp.string,
+advphp.value.string,
+advphp.string.doubleQuote,
+advphp.string.singleQuote {
+  color: $green;
+}

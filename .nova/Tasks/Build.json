@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "path" : "sass.sh"
+    }
+  },
+  "identifier" : "DD35D0EE-B300-49D5-8EBE-1C05354C4B9B"
+}
