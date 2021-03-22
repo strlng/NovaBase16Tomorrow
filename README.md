@@ -1,9 +1,9 @@
 
 
 **Base16 Tomorrow** provides a light palette:
-![](Images/light-editor.png)
+![](https://raw.githubusercontent.com/strlng/NovaBase16Tomorrow/main/Images/light-editor.png)
 As well as a darker alternative:
-![](Images/dark-editor.png)
+![](https://raw.githubusercontent.com/strlng/NovaBase16Tomorrow/main/Images/dark-editor.png)
 
 ## Acknowledgements
 
